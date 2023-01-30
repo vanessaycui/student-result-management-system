@@ -18,7 +18,17 @@ export default function AllStudentsTable({ allStudents }) {
           <td>Date of Birth</td>
         </tr>
       </thead>
-      <tbody>{students}</tbody>
+      <tbody>
+        {students.length > 0 ? (
+          students
+        ) : (
+          <tr>
+            <td></td>
+            <td>No Record of Students</td>
+            <td></td>
+          </tr>
+        )}
+      </tbody>
     </table>
   );
 }

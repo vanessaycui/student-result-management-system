@@ -14,7 +14,15 @@ export default function AllCoursessTable({ allCourses }) {
           <td>Course Title</td>
         </tr>
       </thead>
-      <tbody>{courses}</tbody>
+      <tbody>
+        {courses.length > 0 ? (
+          courses
+        ) : (
+          <tr>
+            <td>No Record of Courses In System</td>
+          </tr>
+        )}
+      </tbody>
     </table>
   );
 }

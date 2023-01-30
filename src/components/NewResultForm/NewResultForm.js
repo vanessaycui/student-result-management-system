@@ -51,19 +51,8 @@ export default function NewResultForm({
 
   return (
     <form className="NewResultForm" onSubmit={handleSubmit}>
-      <h2>Add a New Result:</h2>
-      <div>
-        <label> Student:</label>
-        <select
-          name="student"
-          value={newResult.student}
-          required
-          onChange={handleChange}
-        >
-          <option value=""> ------- </option>
-          {studentList}
-        </select>
-      </div>
+      <h2>Add New Student Score:</h2>
+      
       <div>
         <label>Course: </label>
         <select
@@ -77,7 +66,19 @@ export default function NewResultForm({
         </select>
       </div>
       <div>
-        <label>Grade:</label>
+        <label> Student:</label>
+        <select
+          name="student"
+          value={newResult.student}
+          required
+          onChange={handleChange}
+        >
+          <option value=""> ------- </option>
+          {studentList}
+        </select>
+      </div>
+      <div>
+        <label>Score:</label>
         <select
           name="grade"
           value={newResult.grade}

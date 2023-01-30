@@ -23,7 +23,7 @@ export default function Results({
         allStudents={allStudents}
         allCourses={allCourses}
       />
-      <h1>All Results</h1>
+      <h1>Student Scores</h1>
       <AllResultsTable
         allResults={allResults}
         allStudents={allStudents}

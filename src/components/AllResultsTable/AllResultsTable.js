@@ -22,7 +22,17 @@ export default function AllResultsTable({
           <td>Score</td>
         </tr>
       </thead>
-      <tbody>{results}</tbody>
+      <tbody>
+        {results.length > 0 ? (
+          results
+        ) : (
+          <tr>
+            <td></td>
+            <td>No Record of Student Results</td>
+            <td></td>
+          </tr>
+        )}
+      </tbody>
     </table>
   );
 }
