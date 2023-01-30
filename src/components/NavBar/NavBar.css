@@ -8,7 +8,7 @@
     left:0;
     width: 15vw;
     min-width: 130px;
-    background-color: #497174;
+    background-color: #D6E4E5;
 }
 
 .NavBar a{
@@ -16,7 +16,7 @@
     margin-top:50px;
     text-decoration: none;
     font-weight: bold;
-    color: #EFF5F5;
+    color: #497174;
 }
 
 
@@ -35,4 +35,10 @@
 .NavBar .disabled{
     font-style: normal;
     color: grey;
+}
+
+.NavBar h1{
+    margin-top: 20%;
+    font-size: 3rem;
+    color: #497174;
 }

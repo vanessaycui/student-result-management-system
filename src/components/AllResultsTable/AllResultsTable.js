@@ -1,27 +1,28 @@
 import "./AllResultsTable.css";
-import { useEffect, useState } from "react";
 
-export default function AllResultsTable({allResults, allStudents, allCourses}) {
-    const results = allResults.map((result, idx) => (
-        <tr key={idx}>
-            <td>{result.student}</td>
-            <td>{result.course}</td>
-            <td>{result.grade}</td>
-        </tr>
-    ))
+export default function AllResultsTable({
+  allResults,
+  allStudents,
+  allCourses,
+}) {
+  const results = allResults.map((result, idx) => (
+    <tr key={idx}>
+      <td>{result.course}</td>
+      <td>{result.student}</td>
+      <td>{result.grade}</td>
+    </tr>
+  ));
 
   return (
-
     <table className="AllResultsTable">
       <thead>
-        <td>Student Name</td>
-        <td>Course Name</td>
-        <td>Grade</td>
+        <tr>
+          <td>Course</td>
+          <td>Student</td>
+          <td>Score</td>
+        </tr>
       </thead>
-      <tbody>
-        {results}
-      </tbody>
+      <tbody>{results}</tbody>
     </table>
-
   );
 }
