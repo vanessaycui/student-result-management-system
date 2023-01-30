@@ -1,0 +1,26 @@
+.Students{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Students form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-width: 600px;
+}
+
+.Students form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 20px auto;
+}

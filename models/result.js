@@ -13,8 +13,8 @@ const resultSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref:'Student'
     },
-   result: {
-      type: string,
+   grade: {
+      type: String,
       required: true
     }, 
 },{

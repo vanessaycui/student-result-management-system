@@ -1,0 +1,38 @@
+.NavBar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    left:0;
+    width: 15vw;
+    min-width: 130px;
+    background-color: #497174;
+}
+
+.NavBar a{
+    padding: 20px;
+    margin-top:50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EFF5F5;
+}
+
+
+.NavBar a:hover{
+    font-style: italic;
+    color: #EB6440;
+}
+
+
+.NavBar .disabled:hover{
+    font-style: normal;
+    color: grey;
+    cursor:auto;
+}
+
+.NavBar .disabled{
+    font-style: normal;
+    color: grey;
+}

@@ -25,6 +25,9 @@ app.listen(port, function() {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.use('/api', require('./routes/api/students'))
+app.use('/api', require('./routes/api/courses'))
+app.use('/api', require('./routes/api/results'))
 
 //catch-all route to return the idex.html on non-AJAX request
 app.get('/*', function(req, res) {
