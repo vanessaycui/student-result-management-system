@@ -1,11 +1,14 @@
 import "./AllStudentsTable.css";
 
 export default function AllStudentsTable({ allStudents }) {
+  let today = new Date().getFullYear()
+  
   const students = allStudents.map((student, idx) => (
     <tr key={idx}>
       <td>{student.firstName}</td>
       <td>{student.familyName}</td>
       <td>{student.dateOfBirth.slice(0, 10)}</td>
+      <td>{today - parseInt(student.dateOfBirth.slice(0,4))}</td>
     </tr>
   ));
 
@@ -16,6 +19,7 @@ export default function AllStudentsTable({ allStudents }) {
           <td>First Name</td>
           <td>Family Name</td>
           <td>Date of Birth</td>
+          <td>Age</td>
         </tr>
       </thead>
       <tbody>
